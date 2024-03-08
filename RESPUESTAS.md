@@ -199,6 +199,7 @@ Analice las siguientes situaciones:
 - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
   
 - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+  Si se desea que cada jugador tenga su propio saldo independiente, se requeriría implementar un sistema de gestión de sesiones. Esto implicaría asignar una sesión única a cada jugador cuando ingresan al sitio y luego mantener la información específica de cada jugador asociada con su sesión. De esta manera, cada jugador tendría su propio saldo, sin importar cuántas personas estén jugando simultáneamente en el sitio.
 
 
 
