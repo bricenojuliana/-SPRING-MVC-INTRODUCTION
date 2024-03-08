@@ -175,7 +175,7 @@ En contraste, en Maven y Java EE, es habitual encontrar una estructura de direct
   ![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/d3f6bc20-3dd9-483a-a9eb-642d8f2226aa)
 Es diferente al greeting.html, ya que el saludo se hace según los parámetros que entran y cuando no hay se pone por defecto World.
 
-### PARTE IV. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
+# PARTE IV. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
 Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API
 https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
 
@@ -184,5 +184,21 @@ Luego de terminada esta parte responda:
   La API RESTful es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. La mayoría de las aplicaciones para empresas deben comunicarse con otras aplicaciones internas o de terceros para llevar a cabo varias tareas. Por ejemplo, para generar nóminas mensuales, su sistema interno de cuentas debe compartir datos con el sistema bancario de su cliente para automatizar la facturación y comunicarse con una aplicación interna de planillas de horarios. Las API RESTful admiten este intercambio de información porque siguen estándares de comunicación de software seguros, confiables y eficientes.
 - Si utilizo un framework como [Boostrap CSS](https://getbootstrap.com/) para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?  
 No utilizamos un framework.
+
+# PARTE V. - APLICACIÓN MVC JUEGO
+¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo `/guess`, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
+
+Y vamos a implementar la lógica de nuestro juego:
+1. Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio
+   se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos.
+2. El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10.
+3. Debe existir un botón de reset, qué permita al jugador iniciar de nuevo.
+4. La capa de controlador debe procer el número del usuario mediante método `POST`.
+
+Analice las siguientes situaciones:
+- ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
+  
+- Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+
 
 
