@@ -121,7 +121,7 @@ Ahora, haz el request GET http://localhost:3000/ usando Postman, y revisa si el 
 ![img_30.png](img_30.png)
 El Body es igual al index.html, lo que significa que es un recurso web estático.
 
-PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
+# PARTE III. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
 
 En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
 
@@ -154,3 +154,15 @@ Después de terminar el aprendizaje analice:
 - Ahora, haz el request GET http://localhost:8080/greeting usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
   ![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/d3f6bc20-3dd9-483a-a9eb-642d8f2226aa)
 Es diferente al greeting.html, ya que el saludo se hace según los parámetros que entran y cuando no hay se pone por defecto World.
+
+### PARTE IV. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
+Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API
+https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
+
+Luego de terminada esta parte responda:
+- ¿Qué es RESTful?
+  La API RESTful es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. La mayoría de las aplicaciones para empresas deben comunicarse con otras aplicaciones internas o de terceros para llevar a cabo varias tareas. Por ejemplo, para generar nóminas mensuales, su sistema interno de cuentas debe compartir datos con el sistema bancario de su cliente para automatizar la facturación y comunicarse con una aplicación interna de planillas de horarios. Las API RESTful admiten este intercambio de información porque siguen estándares de comunicación de software seguros, confiables y eficientes.
+- Si utilizo un framework como [Boostrap CSS](https://getbootstrap.com/) para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?  
+No utilizamos un framework.
+
+
