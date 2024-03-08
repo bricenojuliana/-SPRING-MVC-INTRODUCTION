@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Juego</title>
+</head>
+<body>
+<h1>Juego de Adivinar Número</h1>
+<p>Premio: <span th:text="${Prize}"></span></p>
+<p>Intentos: <span th:text="${Attempts}"></span></p>
+<p th:if="${error}" th:text="${error}"></p>
+<form action="#" th:action="@{/makeGuess}" method="post">
+    <label for="numero">Adivina el número:</label>
+    <input type="text" id="numero" name="numero">
+    <input type="submit" value="Guess">
+</form>
+<form action="#" th:action="@{/reset}" method="post">
+    <input type="submit" value="Reset">
+</form>
+</body>
+</html>
