@@ -147,10 +147,30 @@ El tutorial lo podemos encontrar en
 https://github.com/cristiandavid0124/gs-serving-web-content
 
 Después de terminar el aprendizaje analice:
-- ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial) 
+- ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial)
+   MVC, que significa Modelo-Vista-Controlador, obtiene el nombre de la estructura de diseño que separa una aplicación en tres componentes principales:
+
+Modelo: Representa los datos y la lógica empresarial de la aplicación. El modelo maneja la lógica de la aplicación y la interacción con la base de datos, si es necesario.
+
+Vista: Es la interfaz de usuario que presenta los datos al usuario y maneja la interacción del usuario, como la entrada de datos y los eventos del usuario.
+
+Controlador: Actúa como intermediario entre el modelo y la vista. Responde a las solicitudes del usuario, realiza las operaciones necesarias en el modelo y selecciona la vista adecuada para mostrar los resultados al usuario.
 - ¿Cuáles son las ventajas de usar MVC?
+    Separación de preocupaciones: MVC permite separar la lógica empresarial, la presentación y el control de la aplicación, lo que facilita la            organización del código y la mantenibilidad del proyecto.
+  
+    Reutilización de código: La separación de los componentes permite reutilizar fácilmente el código en diferentes partes de la aplicación o en          otras aplicaciones.
+
+    Facilidad de desarrollo en equipo: Al dividir la aplicación en componentes claros y definidos, diferentes desarrolladores pueden trabajar en          diferentes partes de la aplicación de manera independiente y coordinada.
+
+    Pruebas unitarias más sencillas: Al dividir la aplicación en componentes independientes, es más fácil escribir pruebas unitarias para cada            componente, lo que facilita la detección y corrección de errores. 
 - ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)?
+
+La distinción se manifiesta en cómo se organizan los archivos y carpetas para seguir el patrón MVC. En un proyecto MVC, es común encontrar carpetas separadas específicamente destinadas para los modelos, vistas y controladores. Este enfoque conduce a una estructura de directorios más modular y ordenada, lo que facilita la gestión y comprensión del proyecto.
+
+En contraste, en Maven y Java EE, es habitual encontrar una estructura de directorios más plana, donde todos los archivos y carpetas relacionados con la aplicación se encuentran en el mismo nivel o en estructuras jerárquicas más simples. Esta disposición no siempre refleja claramente la separación de preocupaciones como lo hace un proyecto MVC.
+
 - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+ @Controller se utiliza para establecer una clase como un controlador y @RequestMapping se utiliza para mapear las solicitudes web a metodos de controladores especificos.
 - Ahora, haz el request GET http://localhost:8080/greeting usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
   ![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/d3f6bc20-3dd9-483a-a9eb-642d8f2226aa)
 Es diferente al greeting.html, ya que el saludo se hace según los parámetros que entran y cuando no hay se pone por defecto World.
