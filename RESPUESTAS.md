@@ -197,9 +197,10 @@ Y vamos a implementar la lógica de nuestro juego:
 
 Analice las siguientes situaciones:
 - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes?
+  Si se hace esto lo que pasa es que el juego en ambos navegadores va a manejar la misma informacion debido a que no estamos
+  Gestiónando  sesiones por ende ambos navegadores tienen el mismo estado del juego.
   
 - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
-  Si se desea que cada jugador tenga su propio saldo independiente, se requeriría implementar un sistema de gestión de sesiones. Esto implicaría asignar una sesión única a cada jugador cuando ingresan al sitio y luego mantener la información específica de cada jugador asociada con su sesión. De esta manera, cada jugador tendría su propio saldo, sin importar cuántas personas estén jugando simultáneamente en el sitio.
-
+  Si se desea que cada jugador tenga su propio saldo independiente, se requeriría implementar un sistema de gestión de sesiones. Esto implicaría asignar una sesión única a cada jugador cuando ingresan al sitio y luego mantener la información específica de cada jugador asociada con su sesión. De esta manera, cada jugador tendría su propio saldo, sin importar cuántas personas estén jugando simultáneamente en el sitio , la posible solucion seria el uso de @Component @Scope(value = "session") en la clase Guessgame para garantizar que cada sesión de usuario tenga su propia instancia independiente del juego.  .
 
 
