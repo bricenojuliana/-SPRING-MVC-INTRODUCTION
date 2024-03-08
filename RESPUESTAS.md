@@ -127,21 +127,30 @@ En este ejercicio, va a implementar una aplicación Web muy básica, haciendo us
 
 Para esto usaremos la documentación oficial de Spring con que que aprenderemos las funciones básicas de este framework https://spring.io/guides/gs/serving-web-content/
 
-añadimos la clase Gretting controller al proyecto
+Añadimos la clase Gretting controller al proyecto
 ![img_33.png](img_33.png)
 
-despues de esto agregamos el  gretting HTML como se indica en el tutorial
+Despues de esto agregamos el  gretting HTML como se indica en el tutorial
 ![img_34.png](img_34.png)
-lo corremos con spring 
+Lo corremos con spring 
 ![img_35.png](img_35.png)
-ahora entramos al explorador y colacamos el url aparecera el hello world por defecto
+Ahora entramos al explorador y colacamos el url aparecera el hello world por defecto
 ![img_38.png](img_38.png)
-proporcionamos un parametro name en este caso User
+Proporcionamos un parametro name en este caso User
 ![img_39.png](img_39.png)
 
-ahora agregaremos el index.html y lo corremos de nuevo 
+Ahora agregaremos el index.html y lo corremos de nuevo 
 ![img_40.png](img_40.png)
-entramos de nuevo y vemos la pagina de bienvenida
+Entramos de nuevo y vemos la pagina de bienvenida
 ![img_41.png](img_41.png)
-el tutorial lo podemos encontrar en
+El tutorial lo podemos encontrar en
 https://github.com/cristiandavid0124/gs-serving-web-content
+
+Después de terminar el aprendizaje analice:
+- ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial) 
+- ¿Cuáles son las ventajas de usar MVC?
+- ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)?
+- ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+- Ahora, haz el request GET http://localhost:8080/greeting usando Postman, y revisa si el body de la respuesta es igual a alguno de los archivos del proyecto. Significa eso que es un recurso web dinámico o estático?
+  ![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/d3f6bc20-3dd9-483a-a9eb-642d8f2226aa)
+Es diferente al greeting.html, ya que el saludo se hace según los parámetros que entran y cuando no hay se pone por defecto World.
