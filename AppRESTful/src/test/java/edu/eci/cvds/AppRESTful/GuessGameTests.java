@@ -36,7 +36,7 @@ public class GuessGameTests {
         //Assert
         assertEquals(price, guessGame.getPrize());
     }
-    
+
 
     @Test
     public void should_addAttempt_when_makeGuess(){
