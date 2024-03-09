@@ -65,7 +65,14 @@ Responde las siguientes preguntas:
   Si pongo una URL que no corresponde al Body, aborta.  
   Si pongo la URL que es con su Body correspondiente, se hace una consulta normal.
 
-Como parte del laboratorio en casa has los dos request anteriores pero ahora usando la herramienta Telnet, ya que esta no funciona adecuadamente en los equipos del laboratorio.
+Como parte del laboratorio en casa has los dos request anteriores pero ahora usando la herramienta Telnet, ya que esta no funciona adecuadamente en los equipos del laboratorio.  
+Las consultas hechas en Postman no se pueden hacer bien por telnet, ya que usan el protocolo HTTPS. Si intentamos usar telnet por el puerto 80 vamos a ver un redireccionamiento al puerto 443, el cual es el que usa el protocolo HTTPS.
+![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/86b28549-f197-4c98-976a-44fcc5933625)
+
+
+Si hacemos la consulta con telnet a un dominio que use el protocolo HTTP, vamos a poder observar el HTML de la página web.
+![image](https://github.com/bricenojuliana/SPRING-MVC-INTRODUCTION/assets/124324787/63590dd5-1810-4697-b84b-270e13771555)
+
 
 # PARTE II. - CLIENT SIDE RENDERING CON REACT
 
