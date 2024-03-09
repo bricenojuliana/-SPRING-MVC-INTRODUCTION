@@ -8,7 +8,7 @@ public class GuessGame {
 
     private int numberToGuess;
 
-
+    
     public GuessGame() {
         prize = 0;
         attempts= 0;
